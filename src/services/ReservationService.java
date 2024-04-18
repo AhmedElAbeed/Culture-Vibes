@@ -33,6 +33,16 @@ public class ReservationService implements IService<Reservation> {
         ps.setInt(3, t.getIduser());
         ps.setString(4, t.getPaiement());
         ps.executeUpdate();
+        modifiernobmre(t.getNbrtickets(), t.getVoyage_id());
+    }
+
+    public void modifiernobmre(int nbrtickets, int id) throws SQLException {
+        String req = "UPDATE voyage SET nbrplaces = nbrplaces - ? WHERE id = ?";
+        System.out.println("test");
+        PreparedStatement ps = cnx.prepareStatement(req);
+        ps.setInt(1, nbrtickets);
+        ps.setInt(2, id);
+        ps.executeUpdate();
     }
 
     @Override
@@ -45,7 +55,10 @@ public class ReservationService implements IService<Reservation> {
         ps.setString(4, t.getPaiement());
         ps.setInt(5, t.getId());
         ps.executeUpdate();
+
     }
+
+
 
     @Override
     public void supprimer(Reservation t) throws SQLException {
@@ -54,6 +67,8 @@ public class ReservationService implements IService<Reservation> {
         ps.setInt(1, t.getId());
         ps.executeUpdate();
     }
+
+
 
     @Override
     public List<Reservation> recuperer() throws SQLException {
@@ -91,9 +106,9 @@ public class ReservationService implements IService<Reservation> {
         }
         return reservation;
     }
-    
-    
-        public void aaaa(int id) throws SQLException {
+
+
+    public void aaaa(int id) throws SQLException {
         String query = "DELETE FROM reservation WHERE id = ?";
         PreparedStatement stmt = cnx.prepareStatement(query);
         stmt.setInt(1, id);
