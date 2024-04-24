@@ -5,20 +5,25 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<?import java.net.URL?>
 <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GestionVoyageController">
-   <children>
-      <TableView fx:id="tbVoyages" prefHeight="402.0" prefWidth="686.0">
-        <columns>
-          <TableColumn fx:id="Cid" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="cTitle" prefWidth="75.0" text="Title" />
-            <TableColumn fx:id="cDescription" prefWidth="75.0" text="Description" />
-            <TableColumn fx:id="cDuration" prefWidth="75.0" text="Duration" />
-            <TableColumn fx:id="cBudget" prefWidth="75.0" text="Budget" />
-            <TableColumn fx:id="cLocation" prefWidth="75.0" text="Location" />
-            <TableColumn fx:id="cNbPlaces" prefWidth="75.0" text="NbPlaces" />
-        </columns>
-      </TableView>
-      <Button layoutX="577.0" layoutY="411.0" mnemonicParsing="false" onAction="#goToReservation" text="Reservations" />
-      <Button layoutX="42.0" layoutY="411.0" mnemonicParsing="false" onAction="#GoToAjout" text="Ajouter Voyage" />
-   </children>
+    <stylesheets>
+        <URL value="@../CSS/styles.css" />
+    </stylesheets>
+    <children>
+
+        <TableView fx:id="tbVoyages" prefHeight="402.0" prefWidth="686.0">
+            <columns>
+                <TableColumn fx:id="Cid" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="cTitle" prefWidth="75.0" text="Title" />
+                <TableColumn fx:id="cDescription" prefWidth="75.0" text="Description" />
+                <TableColumn fx:id="cDuration" prefWidth="75.0" text="Duration" />
+                <TableColumn fx:id="cBudget" prefWidth="75.0" text="Budget" />
+                <TableColumn fx:id="cLocation" prefWidth="75.0" text="Location" />
+                <TableColumn fx:id="cNbPlaces" prefWidth="75.0" text="NbPlaces" />
+            </columns>
+        </TableView>
+        <Button layoutX="577.0" layoutY="411.0" mnemonicParsing="false" onAction="#goToReservation" text="Reservations" />
+        <Button layoutX="42.0" layoutY="411.0" mnemonicParsing="false" onAction="#GoToAjout" text="Ajouter Voyage" />
+    </children>
 </AnchorPane>

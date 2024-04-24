@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* AnchorPane styles */
+#AnchorPane {
+    -fx-background-image: url("../image/bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* Set AnchorPane background to transparent */
+}
+#AnchorPane1 {
+    -fx-background-image: url("../image/travelres.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* Set AnchorPane background to transparent */
+}
+
+/* TableView styles */
+.table-view {
+    -fx-background-color: transparent; /* Set TableView background to transparent */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #2f466b, #662d60); /* dark blue */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: linear-gradient(to bottom right, #2f466b, #662d60); /* dark blue */
+    -fx-text-fill: #ffffff; /* white */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f4f4f4; /* light gray */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #bdd7ee; /* light blue */
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #2f466b, #662d60); /* dark blue */
+    -fx-text-fill: #ffffff; /* white */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom left, #517ab5, #ae44a5); /* darker blue */
+}
+
+/* Custom styles */
+.login-bg{
+    -fx-background-color: linear-gradient(to bottom right, #2f466b, #662d60);
+}
+
+.exit{
+    -fx-background-color: #c22c40;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.textfield-design{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: linear-gradient(to bottom right, #2f466b, #662d60);
+    -fx-border-radius: 10px;
+    -fx-text-inner-color: #000;
+}
+
+.button-design{
+    -fx-background-color: linear-gradient(to bottom right, #2f466b, #662d60);
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+
+.button-design:hover{
+    -fx-background-color: linear-gradient(to bottom left, #517ab5, #ae44a5);
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+
+.hypertext-design{
+    -fx-text-fill: #5185c5;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+}
+
+.hypertext-design:hover{
+    -fx-underline: true;
+}

@@ -5,8 +5,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundImage?>
+<?import javafx.scene.image.Image?>
 
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CreateReservationController">
+<?import java.net.URL?>
+<AnchorPane id="AnchorPane1" prefHeight="450.0" prefWidth="686.0"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.CreateReservationController">
+   <stylesheets>
+      <URL value="@../CSS/styles.css" />
+   </stylesheets>
    <children>
       <TextField fx:id="nbrPlacesTF" layoutX="84.0" layoutY="112.0" />
       <TextField fx:id="paimentTF" layoutX="84.0" layoutY="222.0" />
